@@ -1,0 +1,71 @@
+header
+     nav
+        a(href="index.html")
+            img(class="nav-logo" scr="img/logo.svg" width:100%)
+        .nav__menu
+            ul
+                li 
+                    a(class="nav__menu-link" href="#") О нас
+                li 
+                    .nav__menu-dropdown
+                        a(class="nav__menu-link" href="#") Услуги
+                        .nav__menu-dropdown-content
+                            a(class="nav__menu-link" href="#") Услуга 1
+                            a(class="nav__menu-link" href="#") Услуга 2
+                            a(class="nav__menu-link" href="#") Услуга 3
+                li 
+                    a(class="nav__menu-link" href="#") Вакансии
+                li 
+                    a(class="nav__menu-link" href="#") Новости
+                li 
+                    .nav__menu-dropdown
+                        a(class="nav__menu-link" href="#") Соглашения
+                        .nav__menu-dropdown-content
+                            a(class="nav__menu-link" href="#") Соглашение 1
+                            a(class="nav__menu-link" href="#") Соглашение 2
+        .nav__buttons
+                button(class="nav__buttons-signin btn_white" onclick="document.getElementById('id01').style.display='block'") 
+                    h3 Войти
+                #id01.modal
+                    h1 Войти
+                    span(class="modal__close" onclick="document.getElementById('id01').style.display='none'" title="Close Modal") &times;
+                    form(class="modal__form animate" action="/action_page.php")
+                        .modal__container
+                            input(type="text" placeholder="Email" name="email" required)
+                            input(type="text" placeholder="Пароль" name="psw" required)
+                            button(class="btn-violet" type="submit")
+                                h3 Войти
+                        .modal__container(style="background-color:#f1f1f1")
+                            span(class="modal__container-text") Нет аккаунта на Toxin?
+                            button(class="modal__container-btn btn-white" type="button" onclick="document.getElementById('id01').style.display='none'")
+                                h3 Создать
+                button(class="nav__buttons-signup btn_violet" onclick="document.getElementById('id01').style.display='block'") 
+                    h3 Зарегистрироваться
+                #id01.modal
+                    span(class="modal__close" onclick="document.getElementById('id01').style.display='none'" title="Close Modal") &times;
+                    h1 Регистрация аккаунта
+                    form(class="modal__form animate" action="/action_page.php")
+                        .modal__container
+                            input(type="text" placeholder="Имя" name="name" required)
+                            input(type="text" placeholder="Фамилия" name="lastname" required)
+                            input(type="radio" id="male" name="gender" value="male")
+                            label(for="male") Мужской
+                            input(type="radio" id="female" name="gender" value="female")
+                            label(for="female") Женский
+                            label(for="birthday") Дата рождения
+                            input(type="date" placeholder="ДД.ММ.ГГГГ" id="birthday" name="birthday" required)
+                            label(for="email") Данные для входа в сервис
+                            input(type="text" placeholder="Email" name="email" required)
+                            input(type="text" placeholder="Пароль" name="psw" required)
+                            label(class="switch")
+                            input(type="checkbox")
+                            span(class="slider round")
+                            p Получать спецпредложения
+                            button(class="btn-violet" type="submit")
+                                h3 Перейти к оплате
+                        .modal__container(style="background-color:#f1f1f1")
+                            span(class="modal__container-text") Уже есть аккаунт на Toxin
+                            button(class="modal__container-btn btn_white" type="button" onclick="document.getElementById('id01').style.display='none'")
+                                h3 Войти
+                            
+        
