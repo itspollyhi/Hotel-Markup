@@ -4,7 +4,8 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         link(rel="stylesheet", href="css/style.css")
-        title Document
+        link(rel="stylesheet", href="css/item-quantity-dropdown.min.css")
+        title UI Kit
     body
         img( class="logo" src="img/logo.svg", alt="TOXIN logo")
         section#main
@@ -57,19 +58,27 @@ html(lang="en")
                         p Next one is the item title inside widgets
                         p This is a label or cta text
                         p This is the body text which is used fot most of the design, like paragraphs, lists, etc.
-        
-        
             h1 Form Elements
             section#forms
                 form(class="forms__input" action="/action_page.php")
                     label(for="User-Email") Text field
                     input(type="email", name="User-Email" placeholder="Email")
-                form(class="forms__select" action="/action_page.php")
-                    label(for="guestsquantity") Dropdown
-                    select(name="guestsquantity" placeholder="Сколько гостей")
-                        option(value="adults") Взрослые
-                        option(value="kids") Дети
-                        option(value="babies") Младенцы
+                .iqdropdown
+                    p.iqdropdown-selection
+                    .iqdropdown-menu
+                        .iqdropdown-menu-option(data-id="item1")
+                            p.iqdropdown-item Item 1
+                            p.iqdropdown-description A short description
+                        .iqdropdown-menu-option(data-id="item2")
+                            p.iqdropdown-item Item 2
+                            p.iqdropdown-description A short description
+                        .iqdropdown-menu-option(data-id="item3")
+                            p.iqdropdown-item Item 3
+                            p.iqdropdown-description A short description
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi unde ex ab at quod. Nesciunt a, quo ea dolorum, similique pariatur maxime quaerat, ipsum illo ab nisi ex quis. Sint ea id doloremque dolorem porro corrupti enim, tempore eum praesentium alias sapiente aliquam ut, illo consequuntur eligendi aut neque. Tenetur eos impedit deleniti rerum, facilis, culpa adipisci ipsum laudantium possimus, nesciunt aut! Ullam quisquam, eum nesciunt sequi alias ipsa dignissimos ab repellat consequatur nulla? Facilis dolorum minima, unde rerum numquam vel quod beatae officia neque veniam eius. Pariatur, ut? Enim dolores sapiente iusto perspiciatis mollitia. Aliquid dolor eius possimus deleniti?
+        script(type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js")
+        script(src="js/item-quantity-dropdown.min.js")
+        script(src="js/drop.js")
 
 
 

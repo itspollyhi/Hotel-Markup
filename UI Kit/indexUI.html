@@ -1,1 +1,110 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="css/style.css"><title>Document</title></head><body><img class="logo" src="img/logo.svg" alt="TOXIN logo"><section id="main"><h1>Colors &amp; Type</h1><section id="clrs"><div class="clrs__column"><div class="clrs__column-box"><div class="clrs__column-shade"></div><div class="clrs__column-text"><h2>Dark Shade 100&#37;</h2><p>#1F2041</p></div></div><div class="clrs__column-box"><div class="clrs__column-shade"></div><div class="clrs__column-text"><h2>Dark Shade 75&#37;</h2><p>#1F2041</p></div></div><div class="clrs__column-box"><div class="clrs__column-shade"></div><div class="clrs__column-text"><h2>Dark Shade 50&#37;</h2><p>#1F2041</p></div></div><div class="clrs__column-box"><div class="clrs__column-shade"></div><div class="clrs__column-text"><h2>Dark Shade 25&#37;</h2><p>#1F2041</p></div></div><div class="clrs__column-box"><div class="clrs__column-shade"></div><div class="clrs__column-text"><h2>Dark Shade 5&#37;</h2><p>#1F2041</p></div></div><div class="clrs__column-box"><div class="clrs__column-shade"></div><div class="clrs__column-text"><h2>Purple</h2><p>#BC9CFF</p></div></div><div class="clrs__column-box"><div class="clrs__column-shade"></div><div class="clrs__column-text"><h2>Green</h2><p>#6FCF97</p></div></div></div><div class="clrs__text"><div class="clrs__text-heading"><p>H1</p><p>H2</p><p>H3</p><p>Body</p></div><div class="clrs__text-sample"><p>This one is the sub-section or widget title</p><p>Next one is the item title inside widgets</p><p>This is a label or cta text</p><p>This is the body text which is used fot most of the design, like paragraphs, lists, etc.</p></div></div></section><h1>Form Elements</h1><section id="forms"><form class="forms__input" action="/action_page.php"><label for="User-Email">Text field</label><input type="email" name="User-Email" placeholder="Email"></form><form class="forms__select" action="/action_page.php"><label for="guestsquantity">Dropdown</label><select name="guestsquantity" placeholder="Сколько гостей"><option value="adults">Взрослые</option><option value="kids">Дети</option><option value="babies">Младенцы</option></select></form></section></section></body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/item-quantity-dropdown.min.css">
+    <title>UI Kit</title>
+  </head>
+  <body><img class="logo" src="img/logo.svg" alt="TOXIN logo">
+    <section id="main">
+      <h1>Colors &amp; Type</h1>
+      <section id="clrs">
+        <div class="clrs__column">
+          <div class="clrs__column-box">
+            <div class="clrs__column-shade"></div>
+            <div class="clrs__column-text">
+              <h2>Dark Shade 100&#37;</h2>
+              <p>#1F2041</p>
+            </div>
+          </div>
+          <div class="clrs__column-box">
+            <div class="clrs__column-shade"></div>
+            <div class="clrs__column-text">
+              <h2>Dark Shade 75&#37;</h2>
+              <p>#1F2041</p>
+            </div>
+          </div>
+          <div class="clrs__column-box">
+            <div class="clrs__column-shade"></div>
+            <div class="clrs__column-text">
+              <h2>Dark Shade 50&#37;</h2>
+              <p>#1F2041</p>
+            </div>
+          </div>
+          <div class="clrs__column-box">
+            <div class="clrs__column-shade"></div>
+            <div class="clrs__column-text">
+              <h2>Dark Shade 25&#37;</h2>
+              <p>#1F2041</p>
+            </div>
+          </div>
+          <div class="clrs__column-box">
+            <div class="clrs__column-shade"></div>
+            <div class="clrs__column-text">
+              <h2>Dark Shade 5&#37;</h2>
+              <p>#1F2041</p>
+            </div>
+          </div>
+          <div class="clrs__column-box">
+            <div class="clrs__column-shade"></div>
+            <div class="clrs__column-text">
+              <h2>Purple</h2>
+              <p>#BC9CFF</p>
+            </div>
+          </div>
+          <div class="clrs__column-box">
+            <div class="clrs__column-shade"></div>
+            <div class="clrs__column-text">
+              <h2>Green</h2>
+              <p>#6FCF97</p>
+            </div>
+          </div>
+        </div>
+        <div class="clrs__text">
+          <div class="clrs__text-heading">
+            <p>H1</p>
+            <p>H2</p>
+            <p>H3</p>
+            <p>Body</p>
+          </div>
+          <div class="clrs__text-sample">
+            <p>This one is the sub-section or widget title</p>
+            <p>Next one is the item title inside widgets</p>
+            <p>This is a label or cta text</p>
+            <p>This is the body text which is used fot most of the design, like paragraphs, lists, etc.</p>
+          </div>
+        </div>
+      </section>
+      <h1>Form Elements</h1>
+      <section id="forms">
+        <form class="forms__input" action="/action_page.php">
+          <label for="User-Email">Text field</label>
+          <input type="email" name="User-Email" placeholder="Email">
+        </form>
+        <div class="iqdropdown">
+          <p class="iqdropdown-selection"></p>
+          <div class="iqdropdown-menu">
+            <div class="iqdropdown-menu-option" data-id="item1">
+              <p class="iqdropdown-item">Item 1</p>
+              <p class="iqdropdown-description">A short description</p>
+            </div>
+            <div class="iqdropdown-menu-option" data-id="item2">
+              <p class="iqdropdown-item">Item 2</p>
+              <p class="iqdropdown-description">A short description</p>
+            </div>
+            <div class="iqdropdown-menu-option" data-id="item3">
+              <p class="iqdropdown-item">Item 3</p>
+              <p class="iqdropdown-description">A short description</p>
+            </div>
+          </div>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi unde ex ab at quod. Nesciunt a, quo ea dolorum, similique pariatur maxime quaerat, ipsum illo ab nisi ex quis. Sint ea id doloremque dolorem porro corrupti enim, tempore eum praesentium alias sapiente aliquam ut, illo consequuntur eligendi aut neque. Tenetur eos impedit deleniti rerum, facilis, culpa adipisci ipsum laudantium possimus, nesciunt aut! Ullam quisquam, eum nesciunt sequi alias ipsa dignissimos ab repellat consequatur nulla? Facilis dolorum minima, unde rerum numquam vel quod beatae officia neque veniam eius. Pariatur, ut? Enim dolores sapiente iusto perspiciatis mollitia. Aliquid dolor eius possimus deleniti?</p>
+      </section>
+    </section>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/item-quantity-dropdown.min.js"></script>
+    <script src="js/drop.js"></script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "hotel-markup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itspollyhi/Hotel-Markup.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/itspollyhi/Hotel-Markup/issues"
+  },
+  "homepage": "https://github.com/itspollyhi/Hotel-Markup#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "jquery": "^3.0.0"
+  }
+}
